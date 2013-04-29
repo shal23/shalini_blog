@@ -1,4 +1,18 @@
 ShaliniBlog::Application.routes.draw do
+  resources :enquirers
+
+
+  get "contact/index", :id => "contact"
+  match "contact" => "contact#index"
+
+  get "blog/index",:id => "blog"
+  match "blog" => "blog#index"
+
+  resources :posts do
+  	resources :comments
+  end
+
+
   authenticated :user do
     root :to => 'home#index'
   end

@@ -1,5 +1,5 @@
 
-	<h1>
+<h1>
  My journey on Rails!</h1>
 
 <p>Just a few weeks back all I knew about rails was that it had to do something with trains! But
@@ -26,3 +26,20 @@ how can I forgot all the Friday lunches, guest lectures, inspiring documentaries
 we have enjoyed so far! They include some amazing experiences that the class has had. Again thanks
 to Danila and Peter for making all this possible for us. I hope all of us do well and find success at the
 end of the course. Best of luck everyone!</p>
+<br>
+<br>
+<br>
+<% @posts.each do |post| %>
+<h2><%= post.title %></h2>
+<p><%= post.content %></p>
+<hr>
+<%= link_to 'Edit Post', edit_post_path(post) %> 
+
+<% end %>
+<br>
+<br>
+<br>
+
+
+<%= link_to 'New Post', new_post_path %>
+ 
