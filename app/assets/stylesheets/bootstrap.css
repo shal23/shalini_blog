@@ -228,7 +228,6 @@ body {
   line-height: 20px;
   color: #333333;
   background-color: #ffffff;
- background-image : url(../../Pictures/knitting250px.png);
 }
 
 a {
@@ -769,7 +768,7 @@ h1 {
 }
 
 h2 {
-  font-size: 31.5px;font-family: Verdana;
+  font-size: 31.5px;
 }
 
 h3 {
@@ -4365,8 +4364,8 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #d8e0de;
-  background-image: -moz-linear-gradient(top, #d8e0de, #d8e0de);
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
   background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
@@ -4585,8 +4584,7 @@ input[type="submit"].btn.btn-mini {
           box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar
-{
+.navbar . {
   position: relative;
   left: 0;
   display: block;

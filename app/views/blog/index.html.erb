@@ -1,17 +1,26 @@
-<% @posts.each do |post| %>
+<table class = "table">
   <tr>
-    <p><%= post.name %></p>
-    <p><%= post.title %></p>
-    <p><%= post.content %></p>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
 
-   
-
+<% @posts.each do |post| %>
+  
+    <td><%= post.name %></td>
+    <td><%= post.title %></td>
+    <td><%= post.content %></td>
+    <td><%= post.created_at.strftime("%e, %b, %Y") %></td>
+</table>
+ 
 <%= link_to 'Edit Post', edit_post_path(post) %> 
 
 <% end %>
 <br>
 <br>
-
 
 
 
