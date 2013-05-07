@@ -55,6 +55,7 @@ module ShaliniBlog
 
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
+    # Heroku requires this to be false
     config.assets.initialize_on_precompile=false
 
     # Use SQL instead of Active Record's schema dumper when creating the database.
