@@ -10,4 +10,11 @@ class User < ActiveRecord::Base
   attr_accessible :role_ids, :as => :admin
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me
   
+	#has_many :posts
+	#has_many :comments
+
+#def valid_password?(password)  
+ # !provider.nil? || super(password)  
+ # end
+  
 end

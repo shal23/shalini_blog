@@ -8,6 +8,17 @@
   }
   
  body {
- background-image: url(nasty_fabric.png); 
+ background-color: #cccccc; 
  padding-top: 60px; 
  }
+
+.circle {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px; 
+}
+.red {
+  background-color: rgba(200,100,100,0.55);
+}

@@ -1,8 +1,9 @@
 class CommentsController < ApplicationController
 
 	http_basic_authenticate_with :name => "admin", :password => "secret", :only => :destroy
-	
-	def create
+
+  
+def create
     @post = Post.find(params[:post_id])
    # snipped for brevity
     @comment = @post.comments.create(params[:comment])
@@ -16,5 +17,3 @@ def destroy
     redirect_to post_path(@post)
   end
 end 
- 
-

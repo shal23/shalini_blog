@@ -1,5 +1,6 @@
 ShaliniBlog::Application.routes.draw do
-  resources :enquirers
+ 
+ resources :enquirers
 
 
   get "contact/index", :id => "contact"
@@ -9,7 +10,7 @@ ShaliniBlog::Application.routes.draw do
   match "blog" => "blog#index"
 
   resources :posts do
-  	resources :comments
+   resources :comments
   end
 
 

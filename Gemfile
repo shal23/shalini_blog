@@ -35,6 +35,7 @@ gem "figaro", ">= 0.6.3"
 gem "better_errors", ">= 0.7.2", :group => :development
 gem "binding_of_caller"
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
+gem 'acts-as-taggable-on', '~> 2.3.1'
 
 
 
