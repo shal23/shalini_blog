@@ -1,5 +1,5 @@
 class EnquiryMailer < ActionMailer::Base
-  default from: "shalini.dal@gmail.com"
+  default from: "shalinidal@gmail.com"
 
   def enquiry_email(enquirer)
   	@enquirer = enquirer
