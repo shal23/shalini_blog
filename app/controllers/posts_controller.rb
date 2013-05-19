@@ -83,5 +83,13 @@ class PostsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  #def tagged
+   # if params[:tag].present? 
+    #  @posts = Post.tagged_with(params[:tag])
+    #else 
+     # @posts = Post.postall
+    #end  
+  #end
 end
   

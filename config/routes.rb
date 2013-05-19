@@ -2,6 +2,8 @@ ShaliniBlog::Application.routes.draw do
  
  resources :enquirers
 
+ #match 'tagged' => 'posts#tagged', :as => 'tagged'
+
 
   get "contact/index", :id => "contact"
   match "contact" => "contact#index"
