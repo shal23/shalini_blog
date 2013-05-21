@@ -3,7 +3,7 @@ class EnquiryMailer < ActionMailer::Base
 
   def enquiry_email(enquirer)
   	@enquirer = enquirer
-  	mail(:to => "shalinidal@gmail.com", :subject => "Website enquiry")
+  	mail(:to => "shalinidalal@gmail.com", :subject => "Enquiry")
   end
 
 end
