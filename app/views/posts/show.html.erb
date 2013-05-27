@@ -2,18 +2,18 @@
 <br>
 <p id="notice"><%= notice %></p>
  
-<p>
+<!--<p>
   <b>Name:</b>
   <%= @post.name %>
-</p>
+</p>-->
  
 <p>
-  <b>Title:</b>
-  <%= @post.title %>
+  <!--<b>Title:</b>-->
+  <b><h4><%= @post.title %></h4></b>
 </p>
 
 <p>
-  <b>Content:</b>
+  <!--<b>Content:</b>-->
   <%= @post.content.html_safe %>
 </p>
 <br>
@@ -22,11 +22,11 @@
 <%= render @post.comments %>
 <br>
  
-<h5>Add comment:</h5>
+<h6>Leave a comment:</h6>
 <%= render "comments/form" %>
  
 <br />
  
-<%= link_to 'Edit Post', edit_post_path(@post) %><br>
+<!--<%= link_to 'Edit Post', edit_post_path(@post) %>--><br>
 <br>
-<%= link_to 'Back to Posts', posts_path %><br>
+<%= link_to 'Back to Posts', blog_path %><br>
