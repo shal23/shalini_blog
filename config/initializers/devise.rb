@@ -8,7 +8,7 @@ Devise.setup do |config|
 
   require "omniauth-facebook"
   OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development? 
-  config.omniauth :facebook, "640474585968528", "a9e726c45c6e8c688a7f3b980bb62441"
+  config.omniauth :facebook, "FACEBOOK_ID", "FACEBOOK_SECRET"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"

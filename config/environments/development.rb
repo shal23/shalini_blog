@@ -27,8 +27,8 @@ ShaliniBlog::Application.configure do
     domain: "example.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: "shalinidal@gmail.com",
-    password: "sdyahoo23"
+    user_name: "GMAIL_USERNAME",
+    password: "GMAIL_PASSWORD"
   }
 
   # Print deprecation notices to the Rails logger
