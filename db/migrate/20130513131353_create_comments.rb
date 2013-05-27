@@ -1,6 +1,7 @@
 class CreateComments < ActiveRecord::Migration
 
 def change
+	drop_table :comments
     create_table :comments do |t|
       t.string :commenter
       t.text :body

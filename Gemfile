@@ -36,6 +36,12 @@ gem "better_errors", ">= 0.7.2", :group => :development
 gem "binding_of_caller"
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
 #gem "ImageResize", "~> 0.0.5"
+#gem "social_icons", "~> 0.3.0"
+gem 'wysihtml5-rails'
+gem 'social-share-button'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'truncate_html'
 
 
 

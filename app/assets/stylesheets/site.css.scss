@@ -1,26 +1,214 @@
+@import url(http://fonts.googleapis.com/css?family=Condiment);
+
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Ropa Sans', sans-serif;
+}
+
+h2 {
+  font-size: 1.7em;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: grayLight;
+  font-family: 'Paprika', cursive;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 1.7em;
+  line-height: 1;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: grayLight;
+  font-family: 'Condiment';
+  
+}
+
+h4 {
+  font-size: 1.7em;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: grayLight;
+  font-family: 'Paprika', cursive;
+}
+
+h5 {
+  font-size: 1.7em;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: grayLight;
+
+
+  }
+
+h6 {
+  font-size: 1.7em;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: grayLight;
+ 
+}
+
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+  font-family: Arial, Calibri;
+}
+
+
+
+/* ----- Header ----- */
+
+
+.header .navbar {
+    margin-bottom: 0;
+    font-family: Verdana;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+
+}
+
+.nav-header {
+  display: block;
+  padding: 3px 15px;
+  font-size: 11px;
+  font-family: Verdana;
+  font-weight: bold;
+  line-height: 20px;
+  color: #999999;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+.header .navbar-inner {
+    background: #fff;
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.header h1 {
+    float: left;
+    margin: 0;
+    text-align: left;
+}
+
+.header ul.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.header ul.nav li a {
+    padding: 30px 20px 10px 20px;
+    color: #5d5d5d;
+    text-shadow: none;
+}
+
+.header ul.nav li.current-page a {
+    padding-top: 25px;
+    border-top: 5px solid #9d426b;
+    background: #f8f8f8;
+}
+
+.header ul.nav li a:hover {
+    background: #9d426b;
+    color: #fff;
+}
+
+.header ul.nav li a i {
+    line-height: 35px;
+    color: #aaa;
+}
+
+.header ul.nav li a:hover i { color: #fff; }
+
 .navbar-inner {
-  min-height: 60px;
+  min-height: 40px;
   padding-right: 40px;
   padding-left: 20px;
-  background-color: #022859;
+  background-color: #8D3131;
   background-image: none;
 
   }
-  
- body {
- background-color: #cccccc; 
- padding-top: 60px; 
- }
+ 
+/* ----- Body ----- */
+
+
+body {
+  margin: 0;
+ 
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  background-color: white;
+  padding-top: 60px;
+}
 
 .circle {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
-    border-radius: 200px; 
+    border-radius: 200px;
 }
-.red {
-  background-color: rgba(200,100,100,0.55);
+
+.violet {
+  background-color: #ff6633;
+}
+
+.sky_blue {
+  background-color: #ff6666;
 }
 
 .img-circle {
@@ -30,44 +218,270 @@
 
 }
 
-body {
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+
+/********** ----- CONTACT PAGE ----- **********/
+
+/* ----- Form ----- */
+
+.contact-us {
+    margin-top: 20px;
+    padding-bottom: 50px;
+    text-align: left;
 }
 
-a {
-  color: #0088cc;
-  text-decoration: none;
+.contact-us h4 {
+    margin-top: 25px;
+    padding: 0 20px;
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #5d5d5d;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255,255,255,.7);
 }
 
-a:hover,
-a:focus {
-  color: #005580;
-  text-decoration: underline;
+.contact-us p {
+    padding: 0 20px;
+    line-height: 28px;
+    font-size: 13px;
 }
 
-.modal-footer:before,
-.modal-footer:after {
-  display: table;
-  line-height: 0;
-  content: "";
+.contact-form {
+    padding: 10px 0;
 }
 
-.modal-footer:after {
-  clear: both;
+.contact-form p {
+    margin-top: 15px;
 }
 
-.modal-footer .btn + .btn {
+.contact-us form {
+    margin-top: 25px;
+    padding: 0 20px;
+}
+
+.contact-us form input, .contact-us form textarea {
+    width: 90%;
+    height: 24px;
+    border: 1px solid #ddd;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #888;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.contact-us form input:focus, .contact-us form textarea:focus {
+    border: 1px solid #bbb;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.contact-us form textarea {
+    height: 160px;
+}
+
+.contact-us form button {
+    width: 120px;
+    height: 30px;
+    margin-top: 15px;
+    background: #9d426b;
+    border: 0;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #fff;
+    -moz-box-shadow:
+        0 1px 25px 0 rgba(0,0,0,.05) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    -webkit-box-shadow:
+        0 1px 25px 0 rgba(0,0,0,.05) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    box-shadow:
+        0 1px 25px 0 rgba(0,0,0,.05) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+
+.contact-us form button:hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.contact-us form button:active {
+    -moz-box-shadow:
+        0 5px 10px 0 rgba(0,0,0,.15) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    -webkit-box-shadow:
+        0 5px 10px 0 rgba(0,0,0,.15) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    box-shadow:
+        0 5px 10px 0 rgba(0,0,0,.15) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+}
+
+.contact-us form label {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.contact-us form input:-moz-placeholder, .contact-us form textarea:-moz-placeholder { color: #ccc; }
+.contact-us form input:-ms-input-placeholder, .contact-us form textarea:-ms-input-placeholder { color: #ccc; }
+.contact-us form input::-webkit-input-placeholder, .contact-us form textarea::-webkit-input-placeholder { color: #ccc; }
+
+/* ----- Google maps ----- */
+
+.map {
+    margin: 20px 20px 40px 20px;
+    height: 300px;
+    border: 5px solid #f8f8f8;
+}
+
+
+
+/* ----- Call to action ----- */
+
+.call-to-action {
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.call-to-action-text {
+    padding: 25px 0 20px 0;
+    text-align: left;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.call-to-action-text:hover {
+    box-shadow:
+        0 3px 10px 0 rgba(0,0,0,.05),
+        0 1px 25px 0 rgba(0,0,0,.05) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+.call-to-action-text .ca-text, .call-to-action-text .ca-button {
+    float: left;
+    padding: 0 0 0 35px;
+    line-height: 30px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.call-to-action-text .ca-button {
+    float: right;
+    padding: 0 35px 0 0;
+}
+
+.call-to-action-text .ca-button a {
+    padding: 5px 22px;
+    background: #9d426b;
+    color: #fff;
+    text-decoration: none;
+    -moz-box-shadow:
+        0 1px 25px 0 rgba(0,0,0,.05) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    -webkit-box-shadow:
+        0 1px 25px 0 rgba(0,0,0,.05) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    box-shadow:
+        0 1px 25px 0 rgba(0,0,0,.05) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+}
+
+.call-to-action-text .ca-button a:hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.call-to-action-text .ca-button a:active {
+    -moz-box-shadow:
+        0 5px 10px 0 rgba(0,0,0,.15) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    -webkit-box-shadow:
+        0 5px 10px 0 rgba(0,0,0,.15) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+    box-shadow:
+        0 5px 10px 0 rgba(0,0,0,.15) inset,
+        0 -1px 25px 0 rgba(0,0,0,.05) inset;
+}
+
+
+.modal-footer {
+  padding: 14px 15px 15px;
   margin-bottom: 0;
-  margin-left: 5px;
+  text-align: right;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+     -moz-box-shadow: inset 0 1px 0 #ffffff;
+          box-shadow: inset 0 1px 0 #ffffff;
 }
 
-.modal-footer .btn-group .btn + .btn {
-  margin-left: -1px;
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  background-color: #8D3131;
+  color: #fff;
 }
 
-.modal-footer .btn-block + .btn-block {
-  margin-left: 0;
+footer a {
+  color: #555;
+} 
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 10px 20px 10px;
+  margin-left: -20px;
+  font-size: 25px;
+  font-weight: 200;
+  color: #777777;
+  text-shadow: 0 1px 0 #ffffff;
+  font-family: Condiment, cursive;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: white;
+  text-decoration: bold;
+  background-color: transparent;
 }

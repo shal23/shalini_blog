@@ -1,12 +1,21 @@
 ShaliniBlog::Application.routes.draw do
  
+  get "contact/index"
+  match "contact" => "contact#index"
+
+  resources :enquiries
+
+
+  get "projects/index"
+  match "projects" => "projects#index"
+
+  get "admin/index"
+  match "admin" => "admin#index"
+
  resources :enquirers
 
  #match 'tagged' => 'posts#tagged', :as => 'tagged'
 
-
-  get "contact/index", :id => "contact"
-  match "contact" => "contact#index"
 
   get "blog/index",:id => "blog"
   match "blog" => "blog#index"

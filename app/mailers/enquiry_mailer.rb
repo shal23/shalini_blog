@@ -3,7 +3,10 @@ class EnquiryMailer < ActionMailer::Base
 
   def enquiry_email(enquirer)
   	@enquirer = enquirer
-  	mail(:to => "shalinidal@gmail.com", :subject => "Website enquiry")
+  	# @users = User.all
+  	# @users_emails = @users.map(&:email)
+
+  	mail(:bcc => "shalinidal@gmail.com", :subject => "Website enquiry")
   end
 
 end

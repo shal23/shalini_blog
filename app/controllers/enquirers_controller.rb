@@ -56,7 +56,7 @@ class EnquirersController < ApplicationController
 
   # PUT /enquirers/1
   # PUT /enquirers/1.json
-  def update
+q  def update
     @enquirer = Enquirer.find(params[:id])
 
     respond_to do |format|

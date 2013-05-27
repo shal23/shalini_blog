@@ -1,13 +1,13 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
 
   <div class="field">
-    <!--<i class="icon-user"></i>-->
+     <i class="icon-user"></i>
     <%= f.label :commenter %><br />
     <%= f.text_field :commenter %>
   </div>
   
   <div class="field">
-    <!--<i class="icon-comment"></i>-->
+    <i class="icon-comment"></i>
     <%= f.label :body %><br />
     <%= f.text_area :body, :rows => 15, :cols => 100 %>
   </div>

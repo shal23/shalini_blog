@@ -27,11 +27,9 @@ ShaliniBlog::Application.configure do
     domain: "example.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"]
+    user_name: "shalinidal@gmail.com",
+    password: "sdyahoo23"
   }
-
-
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
