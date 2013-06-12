@@ -15,13 +15,16 @@
     <td><%= enquirer.name %></td>
     <td><%= enquirer.email %></td>
     <td><%= enquirer.message %></td>
-    <td><%= link_to 'Show', enquirer %></td>
-    <td><%= link_to 'Edit', edit_enquirer_path(enquirer) %></td>
-    <td><%= link_to 'Destroy', enquirer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+   
+        <td><%= link_to 'Show', enquirer %></td>
+        <td><%= link_to 'Edit', edit_enquirer_path(enquirer) %></td>
+        <td><%= link_to 'Destroy', enquirer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <%= link_to 'New Enquirer', new_enquirer_path %>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Enquirer', new_enquirer_path %>
+
